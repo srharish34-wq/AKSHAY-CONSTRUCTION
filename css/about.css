@@ -192,3 +192,119 @@
   .values-row-top, .values-row-bottom{ grid-template-columns:1fr; gap:18px; max-width:100%; margin-top:8px; }
   .value-card{ padding:28px 24px; }
 }
+
+
+/* ================= LEADERSHIP TEAM ================= */
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  margin-top: 45px;
+}
+
+.leader-card {
+  background: var(--white, #ffffff);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leader-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.leader-image {
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leader-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.leader-info {
+  padding: 28px;
+}
+
+.leader-info h3 {
+  margin: 12px 0 8px;
+  font-size: 1.45rem;
+}
+
+.leader-role {
+  color: var(--accent, #c89535);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.leader-info > p:not(.leader-role) {
+  color: var(--ink-soft, #666666);
+  line-height: 1.8;
+}
+
+.leader-experience {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.leader-experience span {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #f5f0e7;
+  color: #72551f;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Tablet and mobile responsive design */
+@media (max-width: 768px) {
+  .leadership-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .leader-image {
+    height: 320px;
+  }
+
+  .leader-info {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .leader-image {
+    height: 280px;
+  }
+
+  .leader-info h3 {
+    font-size: 1.25rem;
+  }
+}
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .leader-image {
+    height: 380px;
+  }
+}
+
+@media (max-width: 480px) {
+  .leader-image {
+    height: 320px;
+  }
+}

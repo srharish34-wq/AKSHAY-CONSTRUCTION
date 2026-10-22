@@ -20,20 +20,20 @@
   var PROJECTS = [
     {
       id: 1,
-      client: "Mr. Karthikeyan",
-      title: "Mr. Karthikeyan Residence",
+      client: "Mr. Sekar",
+      title: "Mr. Sekar Villa",
       location: "Pallavaram, Chennai",
       address: "",
-      category: "Residential Construction",
+      category: "Villa Construction",
       status: "completed",
       images: [
-        "images/completed-villa-01.png",
+        "images/completed project.jpeg",
       ]
     },
     {
       id: 2,
-      client: "Mr. Sekar",
-      title: "Mr. Sekar Residence",
+      client: "Mr. Karthikeyan",
+      title: "Mr. Karthikeyan Residence",
       location: "Pallavaram, Chennai",
       address: "",
       category: "Residential Construction",
@@ -57,13 +57,13 @@
     {
       id: 4,
       client: "Mr. Durairaj",
-      title: "Mr. Durairaj Residence",
+      title: "Mr. Durairaj Villa",
       location: "Polichalur, Chennai",
       address: "Manimegalai Street",
-      category: "Residential Construction",
+      category: "Villa Construction",
       status: "ongoing",
       images: [
-        "images/ongoing-project-01.png",
+        "images/ongoing project.jpeg",
       ]
     }
   ];

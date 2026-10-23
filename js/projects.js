@@ -65,7 +65,18 @@
       images: [
         "images/ongoing project.jpeg",
       ]
-    }
+    },
+  {
+    id: 4,
+      client: "Mr. Vikram",
+      title: "Mr. Vikram Villa",
+      location: "Poonamalle, Chennai",
+      address: "Manimegalai Street",
+      category: "Villa Construction",
+      status: "ongoing",
+      images: [
+        "images/ongoing project1.jpeg",
+  ]}
   ];
 
   var grid = document.getElementById('projectsGrid');
